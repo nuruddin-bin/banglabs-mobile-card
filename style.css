@@ -6,10 +6,85 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-color: lightblue;
+    background-color: #cdcfe8;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mobile-frem{
+    height: 40rem;
+    width: min(20rem, 100%);
+    aspect-ratio: 1 / 2;
+    background-color: #fff;
+    margin: 0 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.frem_cover{
+    height: 100%;
+    width: 100%;
+    background-color: #324068;
+    position: relative;
+    z-index: 2;
+}
+
+/* top area */
+.frem__top{
+    width: 100%;
+    height: 48%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 6rem;
+}
+
+.logo{
+    display: block;
+    width: 65%;
+}
+
+/* bottom area */
+.frem__bottom{
+    width: 100%;
+    height: 52%;
+    background-color: #324068;
+    border-top-left-radius: 5rem;
+    position: relative;
+}
+
+.frem__bottom::before{
+    position: absolute;
+    content: '';
+    height: 6rem;
+    width: 5rem;
+    top: 0;
+    left: 0rem;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.frem__bottom h1{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.frem__bottom span{
+    color: #E28A17;
+}
+
+.frem__bottom h3{
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
